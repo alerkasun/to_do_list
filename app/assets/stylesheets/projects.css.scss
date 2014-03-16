@@ -3,8 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .project_and_tasks{
-
-
+  margin:0 20% 0 20%;
 }
 
 .project {width: 800px;
@@ -84,7 +83,7 @@ display: inline-block;}
 .tasks {width: 800px;
 display: inline-block;
 padding: 5px;
-background: #FFFFFF;}/////////////
+background: #FFFFFF;}
 
 .tasks .name{ width: 600px;
 vertical-align:middle;
@@ -144,3 +143,4 @@ background: url("/assets/delete_task.png") no-repeat;
     color: white;
     font-size: 12pt;
 }
+
