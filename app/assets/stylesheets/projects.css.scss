@@ -53,7 +53,7 @@ display: inline-block;
   padding: 5px;
   background: #DADADA;}
 
-.task .name{ width: 650px;
+.task .name{ width: 600px;
   vertical-align:middle;
   height: 35px;
   padding: 5px;
@@ -74,21 +74,27 @@ display: inline-block;}
   padding: 5px;
 display: inline-block;}
 
-.task .button {width: 20px;
+.task .button {
+width: 140px;
 vertical-align:middle;
-padding: 5px;
+padding: 1px;
 display: inline-block;}
 
 
 .tasks {width: 800px;
 display: inline-block;
 padding: 5px;
-background: #FFFFFF;}
+background: #FFFFFF;}/////////////
 
 .tasks .name{ width: 600px;
 vertical-align:middle;
+color: #8A8181;
 padding: 5px;
 display: inline-block;}
+
+.tasks .name:hover {
+    color: #FCFED5;
+   }
 
 .tasks .checkbox {width: 20px;
 vertical-align:middle;
@@ -114,4 +120,27 @@ display: inline-block;
 width:14px;
 height:16px;
 background: url("/assets/delete_task.png") no-repeat;
+}
+
+
+
+.button_add_task {
+    margin-bottom: 10;
+    display: inline-block;
+    vertical-align:middle;
+    cursor: pointer;
+    text-align: center;
+    background: #7BB293;
+    color: white;
+    font-size: 12pt;
+}
+
+.button_add_list {
+    display: inline-block;
+    vertical-align:middle;
+    cursor: pointer;
+    text-align: center;
+    background: #7BB293;
+    color: white;
+    font-size: 12pt;
 }
