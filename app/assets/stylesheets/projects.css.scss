@@ -13,24 +13,36 @@
   padding: 5px;
   background: #4169A7;
 }
-.project .name{ width: 655px;
+
+.project .name{
+  color:white;
+  font-family:"Times New Roman";
+  font-size:20px;
+  vertical-align:middle;
+  width: 655px;
   height: 35px;
   padding: 5px;
  display: inline-block;
 }
+
 .project .icon {width: 25px;
   height: 35px;
   padding: 5px;
+  vertical-align:middle;
  display: inline-block;
 }
+
 .project .action.edit {width: 25px;
   height: 35px;
   padding: 5px;
+  vertical-align:middle;
 display: inline-block;
 }
+
 .project .action.delete {width: 25px;
   height: 35px;
   padding: 5px;
+  vertical-align:middle;
 display: inline-block;
 }
 
@@ -40,35 +52,56 @@ display: inline-block;
   display: inline-block;
   padding: 5px;
   background: #DADADA;}
+
 .task .name{ width: 650px;
+  vertical-align:middle;
   height: 35px;
   padding: 5px;
 display: inline-block;}
-.task .icon {width: 20px;
-height: 35px;
+
+
+.task .name .feild{ width: 300px;
+  vertical-align:middle;
+  height: 35px;
   padding: 5px;
 display: inline-block;}
-.task .button {width: 20px;
+
+
+
+.task .icon {width: 20px;
+  vertical-align:middle;
+  height: 35px;
   padding: 5px;
+display: inline-block;}
+
+.task .button {width: 20px;
+vertical-align:middle;
+padding: 5px;
 display: inline-block;}
 
 
 .tasks {width: 800px;
-  display: inline-block;
-  padding: 5px;
-  background: #FFFFFF;}
+display: inline-block;
+padding: 5px;
+background: #FFFFFF;}
+
 .tasks .name{ width: 600px;
-  padding: 5px;
+vertical-align:middle;
+padding: 5px;
 display: inline-block;}
+
 .tasks .checkbox {width: 20px;
-  padding: 5px;
+vertical-align:middle;
+padding: 5px;
 display: inline-block;}
 
 .tasks .action.order {width: 20px;
-  padding: 5px;
+vertical-align:middle;
+padding: 5px;
 display: inline-block;}
 
 .tasks .action.edit a {
+vertical-align:middle;
 display: inline-block;
 width:14px;
 height:16px;
@@ -76,6 +109,7 @@ background: url("/assets/edit_task.png") no-repeat;
 }
 
 .tasks .action.delete a {
+vertical-align:middle;
 display: inline-block;
 width:14px;
 height:16px;
