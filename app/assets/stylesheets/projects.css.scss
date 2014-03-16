@@ -1,0 +1,83 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.project_and_tasks{
+
+
+}
+
+.project {width: 800px;
+  height: 35px;
+  display: inline-block;
+  padding: 5px;
+  background: #4169A7;
+}
+.project .name{ width: 655px;
+  height: 35px;
+  padding: 5px;
+ display: inline-block;
+}
+.project .icon {width: 25px;
+  height: 35px;
+  padding: 5px;
+ display: inline-block;
+}
+.project .action.edit {width: 25px;
+  height: 35px;
+  padding: 5px;
+display: inline-block;
+}
+.project .action.delete {width: 25px;
+  height: 35px;
+  padding: 5px;
+display: inline-block;
+}
+
+
+.task {width: 800px;
+  height: 35px;
+  display: inline-block;
+  padding: 5px;
+  background: #DADADA;}
+.task .name{ width: 650px;
+  height: 35px;
+  padding: 5px;
+display: inline-block;}
+.task .icon {width: 20px;
+height: 35px;
+  padding: 5px;
+display: inline-block;}
+.task .button {width: 20px;
+  padding: 5px;
+display: inline-block;}
+
+
+.tasks {width: 800px;
+  display: inline-block;
+  padding: 5px;
+  background: #FFFFFF;}
+.tasks .name{ width: 600px;
+  padding: 5px;
+display: inline-block;}
+.tasks .checkbox {width: 20px;
+  padding: 5px;
+display: inline-block;}
+
+.tasks .action.order {width: 20px;
+  padding: 5px;
+display: inline-block;}
+
+.tasks .action.edit a {
+display: inline-block;
+width:14px;
+height:16px;
+background: url("/assets/edit_task.png") no-repeat;
+}
+
+.tasks .action.delete a {
+display: inline-block;
+width:14px;
+height:16px;
+background: url("/assets/delete_task.png") no-repeat;
+}

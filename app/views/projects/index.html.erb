@@ -1,0 +1,44 @@
+<h1><center>SIMPLE TODO LISTS</center></h1>
+<h2><center>FROM RUBY GARAGE</center></h2>
+
+
+<div class="project_and_tasks">
+  <% @projects.each do |project| %>
+    <div class="project">
+      <div class="icon"><%= image_tag("note.png")%></div>
+      <div class="name"><%= project.name %></div>
+      <div class="action edit"><%= link_to 'Edit', edit_project_path(project) %></div>
+      <div class="action delete"><%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+    </div>
+
+    <div class="task">
+      <%= form_for(@task || Task.new) do |f| %>
+        <div class="icon"><%= image_tag("plus.png")%></div>
+        <div class="name"><%= f.text_field :name %><%= f.hidden_field :project_id, :value => project.id %></div>
+        <div class="button"><%= f.submit %></div>
+      <% end %>
+    </div>
+
+
+    <% project.tasks.each do |task| %>
+      <li class="tasks">
+        <div class="checkbox"><input type="checkbox"></div>
+        <div class="name"><%= task.name %></div>
+        <div class="action order"><%= link_to 'Show', task %></div>
+        <div class="action edit"><%= link_to '', edit_task_path(task) %></div>
+        <div class="action delete"><%= link_to '', task, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+      </li>
+    <% end %>
+  <% end %>
+</div>
+    <br>
+<%= link_to 'Add ToDo List', new_project_path %>
+
+
+
+
+
+
+
+
+
