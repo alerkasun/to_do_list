@@ -7,8 +7,8 @@
     <div class="project">
       <div class="icon"><%= image_tag("note.png")%></div>
       <div class="name"><%= project.name %></div>
-      <div class="action edit"><%= link_to 'Edit', edit_project_path(project) %></div>
-      <div class="action delete"><%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+      <div class="action edit"><%= link_to '', edit_project_path(project) %></div>
+      <div class="action delete"><%= link_to '', project, method: :delete, data: { confirm: 'Are you sure?' } %></div>
     </div>
 
     <div class="task">
