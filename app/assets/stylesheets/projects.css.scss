@@ -38,7 +38,7 @@ margin-left:230px;
   height: 35px;
   padding: 5px;
   vertical-align:middle;
-display: inline-block;
+  display: inline-block;
 }
 
 .project .action.delete {width: 25px;
@@ -95,7 +95,7 @@ padding: 5px;
 display: inline-block;}
 
 .tasks .name:hover {
-    color: #FCFED5;
+    color: #000000;
    }
 
 .tasks .checkbox {width: 20px;
@@ -103,25 +103,31 @@ vertical-align:middle;
 padding: 5px;
 display: inline-block;}
 
-.tasks .action.order {width: 20px;
+.tasks .action.order {width: 30px;
 vertical-align:middle;
 padding: 5px;
 display: inline-block;}
 
-.tasks .action.edit a {
-vertical-align:middle;
-display: inline-block;
-width:14px;
-height:16px;
-background: url("/assets/edit_task.png") no-repeat;
+.tasks .action.edit {
+  display: inline;
+  a {
+  vertical-align:middle;
+  display: inline-block;
+  width:14px;
+  height:16px;
+  background: url("/assets/edit_task.png") no-repeat;
+  }
 }
 
-.tasks .action.delete a {
-vertical-align:middle;
-display: inline-block;
-width:14px;
-height:16px;
-background: url("/assets/delete_task.png") no-repeat;
+.tasks .action.delete {
+  display: inline;
+  a {
+  vertical-align:middle;
+  display: inline-block;
+  width:14px;
+  height:16px;
+  background: url("/assets/delete_task.png") no-repeat;
+  }
 }
 
 

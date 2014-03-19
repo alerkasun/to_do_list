@@ -26,6 +26,7 @@
         <div class="action order"><%= link_to 'Show', task %></div>
         <div class="action edit"><%= link_to '', edit_task_path(task) %></div>
         <div class="action delete"><%= link_to '', task, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        <br>
       </li>
       <br>
     <% end %>
@@ -34,7 +35,8 @@
   <br>
 </div>
     <br>
-<%= link_to 'Add ToDo List', new_project_path %>
+<%= link_to 'Add ToDo List', new_project_path %> <br>
+<%= link_to 'All Tasks', tasks_path %>
 
 
 
