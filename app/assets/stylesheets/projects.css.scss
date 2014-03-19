@@ -3,7 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .project_and_tasks{
-  text-align: center;
+margin-top:10px;
+margin-bottom:100px;
+margin-right:50px;
+margin-left:230px;
 }
 
 .project {width: 800px;
@@ -26,7 +29,7 @@
 
 .project .icon {width: 25px;
   height: 35px;
-  padding: 5px;
+
   vertical-align:middle;
  display: inline-block;
 }
