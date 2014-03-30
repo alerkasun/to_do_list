@@ -5,7 +5,6 @@
 <div class="project_and_tasks">
   <% @projects.each do |project| %>
     <div class="project">
-      <div class="icon"><%= image_tag("note.png")%></div>
       <div class="name"><%= project.name %></div>
       <div class="action edit"><%= link_to '', edit_project_path(project) %></div>
       <div class="action delete"><%= link_to '', project, method: :delete, data: { confirm: 'Are you sure?' } %></div>
@@ -19,27 +18,24 @@
       <% end %>
     </div>
 
-    <% project.tasks.each do |task| %>
-      <li class="tasks">
-        <div class="checkbox"><input type="checkbox"></div>
-        <div class="name"><%= task.name %></div>
-        <div class="action order"><%= link_to 'Show', task %></div>
-        <div class="action edit"><%= link_to '', edit_task_path(task) %></div>
-        <div class="action delete"><%= link_to '', task, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-        <br>
-      </li>
-      <br>
-    <% end %>
-    <br>
+    <ul class="tasks">
+      <% project.tasks.each_with_index do |task, index| %>
+        <li class="task-element <%= (index % 2 == 0) ? "white" : "grey" %>">
+          <div class="checkbox"><input type="checkbox"></div>
+          <div class="name"><%= task.name %></div>
+          <div class="actions">
+            <div class="action order"><%= link_to 'Show', task %></div>
+            <div class="action edit"><%= link_to 'Edit', edit_task_path(task) %></div>
+            <div class="action delete"><%= link_to 'Delete', task, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+          </div>
+        </li>
+      <% end %>
+    </ul>
   <% end %>
   <br>
 </div>
     <br>
 <%= link_to 'Add ToDo List', new_project_path %> <br>
-<%= link_to 'All Tasks', tasks_path %>
-
-
-
-
+<%= link_to 'All Tasks', tasks_path %><br>
 
 

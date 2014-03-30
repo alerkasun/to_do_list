@@ -3,105 +3,123 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .project_and_tasks{
-margin-top:10px;
-margin-bottom:100px;
-margin-right:50px;
-margin-left:230px;
+  margin:10px auto 100px auto;
+  width: 800px;
 }
 
-.project {width: 800px;
+.project {
+  margin: 20px 0 0 0;
   height: 35px;
-  display: inline-block;
-  padding: 5px;
-  background: #4169A7;
+  padding: 5px 0 5px 50px;
+  background: url("/assets/note.png") no-repeat 15px 50% #4169A7;
 }
 
 .project .name{
   color:white;
   font-family:"Times New Roman";
-  font-size:20px;
+  font-size: 20px;
   vertical-align:middle;
-  width: 655px;
-  height: 35px;
-  padding: 5px;
- display: inline-block;
+  float: left;
+  line-height: 35px;
 }
 
-.project .icon {width: 25px;
-  height: 35px;
+.project .action {
+  float: right;
+  height: 15px;
+  padding-top: 10px;
 
-  vertical-align:middle;
- display: inline-block;
-}
-
-.project .action.edit {
-  display: inline-block;
   a {
-  width: 30px;
-  height: 35px;
-  padding: 5px;
-  vertical-align:middle;
-  display: inline-block;
+    display: block;
+    width: 30px;
+    height: 35px;
+    margin: 0 5px;
+  }
+}
+
+.project .action.edit a {
   background: url("/assets/edit_project.png") no-repeat;
-  }
 }
 
-.project .action.delete {
-display: inline;
-a {
-  width: 30px;
-  height: 35px;
-  padding: 5px;
-  vertical-align:middle;
+.project .action.delete a {
   background: url("/assets/delete_project.png") no-repeat;
-  }
 }
 
-
-.task {width: 800px;
-  height: 35px;
-  display: inline-block;
-  padding: 5px;
-  background: #DADADA;}
-
-.task .name{ width: 600px;
-  vertical-align:middle;
+.task {
   height: 35px;
   padding: 5px;
-display: inline-block;}
+  background: #DADADA;
+  overflow: hidden;
+}
 
-
-.task .name .feild{ width: 300px;
-  vertical-align:middle;
+.task .icon {
+  width: 20px;
   height: 35px;
-  padding: 5px;
-display: inline-block;}
+  float: left;
+  padding: 5px 0 0 5px;
+}
 
-
-
-.task .icon {width: 20px;
-  vertical-align:middle;
+.task .name {
   height: 35px;
-  padding: 5px;
-display: inline-block;}
+  float: left;
+  padding: 6px 20px;
+}
+
+.task .name input {
+  width: 540px;
+  padding: 0 10px;
+}
 
 .task .button {
-width: 140px;
-vertical-align:middle;
-padding: 1px;
-display: inline-block;}
+  width: 140px;
+  float: right;
+  height: 30px;
+  padding: 3px 0 0 0;
+}
+
+.tasks {
+  background: #FFFFFF;
+  list-style: none;
+  list-type: none;
+  padding: 0;
+  margin: 0;
+
+  .task-element {
+    height: 35px;
+    overflow: hidden;
+  }
+
+  .grey {
+    background: #e1e1e1;
+  }
+
+  .checkbox {
+    float: left;
+    padding: 8px 10px;
+  }
+
+  .name {
+    color: #8A8181;
+    padding: 8px;
+    width: 530px;
+    float: left;
+  }
+
+  .actions {
+    float: left;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+
+    div {
+      float: left;
+      padding: 8px 5px;
+      margin: 0 5px 0 0;
+    }
+  }
+}
 
 
-.tasks {width: 800px;
-display: inline-block;
-padding: 5px;
-background: #FFFFFF;}
-
-.tasks .name{ width: 600px;
-vertical-align:middle;
-color: #8A8181;
-padding: 5px;
-display: inline-block;}
+tmp {
 
 .tasks .name:hover {
     color: #000000;
@@ -138,7 +156,7 @@ display: inline-block;}
   background: url("/assets/delete_task.png") no-repeat;
   }
 }
-
+}
 
 
 .button_add_task {
@@ -168,3 +186,14 @@ display: inline-block;}
 
 
 
+a.button {
+background: transparent url('bg_button_a.gif') no-repeat scroll top right;
+color: #444;
+display: block;
+float: left;
+font: normal 12px arial, sans-serif;
+height: 24px;
+margin-right: 6px;
+padding-right: 18px; /* sliding doors padding */
+text-decoration: none;
+}
