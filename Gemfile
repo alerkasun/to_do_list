@@ -12,7 +12,7 @@ gem "twitter-bootstrap-rails"
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -35,9 +35,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-group :development do
-  gem 'pry'
-end
+
 
 group :doc do
 
@@ -56,3 +54,14 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+group :development, :test do
+  gem 'sqlite3'
+  gem 'pry'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
