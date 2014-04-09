@@ -133,16 +133,15 @@ display: inline-block;}
 .tasks .action.order {width: 30px;
 vertical-align:middle;
 padding: 5px;
-display: inline-block;}
+display: inline-block;
+}
 
 .tasks .action.edit {
   display: inline;
   a {
+  background: url("/assets/edit_project.png") no-repeat;
   vertical-align:middle;
   display: inline-block;
-  width:14px;
-  height:16px;
-  background: url("/assets/edit_task.png") no-repeat;
   }
 }
 
@@ -154,6 +153,24 @@ display: inline-block;}
   width:14px;
   height:16px;
   background: url("/assets/delete_task.png") no-repeat;
+  }
+}
+
+.tasks .action.status_open {
+  display: inline;
+  a {
+  vertical-align:middle;
+  display: inline-block;
+  background: url("/assets/open.png") no-repeat;
+  }
+}
+
+.tasks .action.status_close {
+  display: inline;
+  a {
+  vertical-align:middle;
+  display: inline-block;
+  background: url("/assets/close.png") no-repeat;
   }
 }
 }
@@ -180,20 +197,24 @@ display: inline-block;}
     font-size: 12pt;
 }
 
+.new_project_button {
+  background-color:#5186C0;
+  color:white;
+  margin-left: 520px;
+  border: 1px solid #000000;
+  font-size: 20pt;
+  padding: 11px;
+  cursor: pointer;
+  text-decoration: none;
+}
 
-
-
-
-
-
-a.button {
-background: transparent url('bg_button_a.gif') no-repeat scroll top right;
-color: #444;
-display: block;
-float: left;
-font: normal 12px arial, sans-serif;
-height: 24px;
-margin-right: 6px;
-padding-right: 18px; /* sliding doors padding */
-text-decoration: none;
+.all_task_button {
+  background-color:#5186C0;
+  color:white;
+  margin-left: 555px;
+  border: 1px solid #000000;
+  font-size: 20pt;
+  padding: 11px;
+  cursor: pointer;
+  text-decoration: none;
 }

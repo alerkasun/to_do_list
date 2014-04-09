@@ -1,0 +1,218 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+body {
+  background-image: url(garage1.jpg);
+  background-position: left top;
+  background-repeat: repeat;
+   }
+
+
+.task-action-delete-task a {
+width:14px;
+height:16px;
+display: inline-block;
+background: url("/assets/delete_task.png") no-repeat;
+}
+
+
+
+
+.task-action-edit-task a {
+width:14px;
+height:14px;
+display: inline-block;
+background: url("/assets/edit_task.png") no-repeat;
+}
+
+      <style>
+        table {
+        width: 100%;
+        }
+        .col1 {
+        width: 100px;
+        }
+        td.col1 { background: #4169A7; color: white; }
+        td.col2 { background: #D0D0D0; color: white; }
+        td.col3 { background: #FFFFFF; color: white; }
+      </style>
+
+
+
+
+<style>
+.task-action-delete-task a {
+width:14px;
+height:16px;
+display: inline-block;
+background: url("/assets/delete_task.png") no-repeat;
+}
+</style>
+<style>
+.task-action-edit-task a {
+width:14px;
+height:14px;
+display: inline-block;
+background: url("/assets/edit_task.png") no-repeat;
+}
+</style>
+.project_and_tasks {
+  margin: 10px auto 100px auto;
+  width: 800px; }
+
+.project {
+  margin: 20px 0 0 0;
+  height: 35px;
+  padding: 5px 0 5px 50px;
+  background: url("/assets/note.png") no-repeat 15px 50% #4169a7; }
+
+.project .name {
+  color: white;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  vertical-align: middle;
+  float: left;
+  line-height: 35px; }
+
+.project .action {
+  float: right;
+  height: 15px;
+  padding-top: 10px; }
+  .project .action a {
+    display: block;
+    width: 30px;
+    height: 35px;
+    margin: 0 5px; }
+
+.project .action.edit a {
+  background: url("/assets/edit_project.png") no-repeat; }
+
+.project .action.delete a {
+  background: url("/assets/delete_project.png") no-repeat; }
+
+.task {
+  height: 35px;
+  padding: 5px;
+  background: #DADADA;
+  overflow: hidden; }
+
+.task .icon {
+  width: 20px;
+  height: 35px;
+  float: left;
+  padding: 5px 0 0 5px; }
+
+.task .name {
+  height: 35px;
+  float: left;
+  padding: 6px 20px; }
+
+.task .name input {
+  width: 540px;
+  padding: 0 10px; }
+
+.task .button {
+  width: 140px;
+  float: right;
+  height: 30px;
+  padding: 3px 0 0 0; }
+
+.tasks {
+  background: #FFFFFF;
+  list-style: none;
+  list-type: none;
+  padding: 0;
+  margin: 0; }
+  .tasks .task-element {
+    height: 35px;
+    overflow: hidden; }
+  .tasks .grey {
+    background: #e1e1e1; }
+  .tasks .checkbox {
+    float: left;
+    padding: 8px 10px; }
+  .tasks .name {
+    color: #8A8181;
+    padding: 8px;
+    width: 530px;
+    float: left; }
+  .tasks .actions {
+    float: left;
+    width: 200px;
+    padding: 0;
+    margin: 0; }
+    .tasks .actions div {
+      float: left;
+      padding: 8px 5px;
+      margin: 0 5px 0 0; }
+
+tmp .tasks .name:hover {
+  color: #000000; }
+tmp .tasks .checkbox {
+  width: 20px;
+  vertical-align: middle;
+  padding: 5px;
+  display: inline-block; }
+tmp .tasks .action.order {
+  width: 30px;
+  vertical-align: middle;
+  padding: 5px;
+  display: inline-block; }
+tmp .tasks .action.edit {
+  display: inline; }
+  tmp .tasks .action.edit a {
+    vertical-align: middle;
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    background: url("/assets/edit_task.png") no-repeat; }
+tmp .tasks .action.delete {
+  display: inline; }
+  tmp .tasks .action.delete a {
+    vertical-align: middle;
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    background: url("/assets/delete_task.png") no-repeat; }
+
+.button_add_task {
+  margin-bottom: 10;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  background: #7BB293;
+  color: white;
+  font-size: 12pt; }
+
+.button_add_list {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  background: #7BB293;
+  color: white;
+  font-size: 12pt; }
+
+a.button {
+  background: transparent url("bg_button_a.gif") no-repeat scroll top right;
+  color: #444;
+  display: block;
+  float: left;
+  font: normal 12px arial, sans-serif;
+  height: 24px;
+  margin-right: 6px;
+  padding-right: 18px;
+  /* sliding doors padding */
+  text-decoration: none; }

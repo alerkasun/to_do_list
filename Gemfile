@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails"
-
+gem 'pg'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
