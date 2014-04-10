@@ -20,13 +20,13 @@
 
     <ul class="tasks">
       <% project.tasks.each_with_index do |task, index| %>
-        <li class="task-element <%= (index % 2 == 0) ? "white" : "grey" %>">
+        <li class="task-element">
           <div class="checkbox"><input type="checkbox"></div>
           <div class="name"><%= task.name %></div>
           <div class="actions">
-            <div class="action order"><%= link_to 'Show', task %></div>
-            <div class="action edit"><%= link_to 'Edit', edit_task_path(task) %></div>
-            <div class="action delete"><%= link_to 'Delete', task, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+            <div class="action show"><%= link_to '', task %></div>
+            <div class="action edit"><%= link_to '', edit_task_path(task) %></div>
+            <div class="action delete"><%= link_to '', task, method: :delete, data: { confirm: 'Are you sure?' } %></div>
           </div>
         </li>
       <% end %>
