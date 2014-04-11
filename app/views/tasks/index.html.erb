@@ -1,11 +1,5 @@
 <h1><center>All tasks</center></h1>
 
-
-
-
-
-
-
 <table style="width:800px", border="1", ALIGN="center", color= "black", bgcolor="#5186C0",font color="red";>
 <tr>
   <td><center><font size="5" color="white">Name</font></center></td>
@@ -20,7 +14,7 @@
         <td><center><font size="4" color="black"><%= task.project.try :name %></font></center></td>
         <td><center><font size="4" color="black"><%= link_to 'Show', task %>
         <%= link_to 'Edit', edit_task_path(task) %>
-        <%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></font></center></td>
+        <%= link_to 'Delete', task, method: :delete, data: { confirm: 'Are you sure?' } %></font></center></td>
       </tr>
     <% end %>
 </tr>
