@@ -16,7 +16,7 @@
   margin: 20px 0 0 0;
   height: 35px;
   padding: 5px 0 5px 50px;
-  background: url("/assets/note.png") no-repeat 15px 50% #4169A7;
+  background: image-url("note.png") no-repeat 15px 50% #4169A7;
 }
 
 .project .name{
@@ -42,11 +42,11 @@
 }
 
 .project .action.edit a {
-  background: url("/assets/edit_project.png") no-repeat;
+  background: image-url("edit_project.png") no-repeat;
 }
 
 .project .action.delete a {
-  background: url("/assets/delete_project.png") no-repeat;
+  background: image-url("delete_project.png") no-repeat;
 }
 
 .task {
@@ -143,7 +143,7 @@ display: inline-block;
 .tasks .action.edit {
   display: inline;
   a {
-  background: url("/assets/edit_task.png") no-repeat;
+  background: image-url("edit_task.png") no-repeat;
   width: 14px;
   height: 14px;
   vertical-align:middle;
@@ -155,7 +155,7 @@ display: inline-block;
 .tasks .action.show {
   display: inline;
   a {
-  background: url("/assets/show_task.png") no-repeat;
+  background: image-url("show_task.png") no-repeat;
   width: 16px;
   height: 16px;
   vertical-align:middle;
@@ -171,7 +171,7 @@ display: inline-block;
   display: inline-block;
   width:14px;
   height:16px;
-  background: url("/assets/delete_task.png") no-repeat;
+  background: image-url("delete_task.png") no-repeat;
   float:right;
   }
 }
@@ -181,7 +181,7 @@ display: inline-block;
   a {
   vertical-align:middle;
   display: inline-block;
-  background: url("/assets/open.png") no-repeat;
+  background: image-url("open.png") no-repeat;
   }
 }
 
@@ -190,7 +190,7 @@ display: inline-block;
   a {
   vertical-align:middle;
   display: inline-block;
-  background: url("/assets/close.png") no-repeat;
+  background: image-url("close.png") no-repeat;
   }
 }
 
