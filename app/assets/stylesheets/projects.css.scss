@@ -105,7 +105,7 @@
   .name {
     color: #8A8181;
     padding: 8px;
-    width: 530px;
+    width: 510px;
     float: left;
   }
 
@@ -116,7 +116,7 @@
 
     div {
       float: left;
-      padding: 8px 5px;
+      padding: 10px 5px;
       margin: 0 5px 0 0;
     }
   }
@@ -134,7 +134,7 @@ vertical-align:middle;
 padding: 5px;
 display: inline-block;}
 
-.tasks .action.order {width: 30px;
+.tasks .action.order {width: 35px;
 vertical-align:middle;
 padding: 5px;
 display: inline-block;
@@ -176,25 +176,17 @@ display: inline-block;
   }
 }
 
-.tasks .action.status_open {
+.tasks .action.save {
   display: inline;
   a {
   vertical-align:middle;
-  display: inline-block;
-  background: image-url('open.png') no-repeat;
+  display: none;
+  width:14px;
+  height:16px;
+  background: image-url('save_task.png') no-repeat;
+  float:right;
   }
 }
-
-.tasks .action.status_close {
-  display: inline;
-  a {
-  vertical-align:middle;
-  display: inline-block;
-  background: image-url('close.png') no-repeat;
-  }
-}
-
-
 
 .button_add_task {
     margin-bottom: 10;

@@ -19,6 +19,15 @@ display: inline-block;
 background: image-url('edit_task.png') no-repeat;
 }
 
+.task-action-save-task a {
+width:14px;
+height:14px;
+display: inline-block;
+background: image-url('save_task.png') no-repeat;
+}
+
+
+
 table {
 width: 100%;
 }
@@ -41,4 +50,11 @@ width:14px;
 height:14px;
 display: inline-block;
 background: image-url('edit_task.png') no-repeat;
+}
+
+.task-action-save-task a {
+width:14px;
+height:14px;
+display: none;
+background: image-url('save_task.png') no-repeat;
 }

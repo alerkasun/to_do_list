@@ -1,9 +1,8 @@
 <h1><center>SIMPLE TODO LISTS</center></h1>
 <h2><center>FROM RUBY GARAGE</center></h2>
 
-
-<div class="project_and_tasks">
-  <% @projects.each do |project| %>
+<% @projects.each do |project| %>
+  <div class="project_and_tasks">
     <div class="project">
       <div class="name"><%= project.name %></div>
       <div class="action edit"><%= link_to '', edit_project_path(project) %></div>
@@ -18,25 +17,30 @@
       <% end %>
     </div>
 
-    <ul class="tasks">
+    <div class="tasks">
       <% project.tasks.each_with_index do |task, index| %>
-        <li class="task-element">
-          <div class="checkbox"><input type="checkbox"></div>
+        <div class="task-element">
+          <div class="checkbox">
+              <%= form_for task do |t| %>
+                <%=t.check_box :status, {}, "done", "open" %>
+              <% end %>
+          </div>
+
           <div class="name"><%= task.name %></div>
           <div class="actions">
             <div class="action show"><%= link_to '', task %></div>
             <div class="action edit"><%= link_to '', edit_task_path(task) %></div>
+             <div class="action save"><%= link_to '' %></div>
             <div class="action delete"><%= link_to '', task, method: :delete, data: { confirm: 'Are you sure?' } %></div>
           </div>
-        </li>
+        </div>
+        <br>
       <% end %>
-    </ul>
-  <% end %>
-  <br>
-</div>
+
     <br>
-
-
+  </div>
+<% end %>
+<br><br><br><br><br>
 <%= link_to '  Add ToDo List  ', new_project_path, {class: "new_project_button"} %>
 <br><br><br>
 <%= link_to '  All Tasks  ', tasks_path, {class: "all_task_button"} %>
