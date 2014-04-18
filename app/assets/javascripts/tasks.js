@@ -11,10 +11,27 @@ $(document).ready(function(){
     return false;
   });
   $(".task-element .save").click(function () {
-    $(this).find("a").hide();
-    var name = $(this).parents(".task-element").find(".name input").val();
-    $(this).parent().find(".edit").show();
-    $(this).parents(".task-element").find(".name").html(name);
+
+    var self = $(this), name = $(this).parents(".task-element").find(".name input").val(),
+      project_id = $(this).parents(".project_and_tasks").data("id"),
+      status = $(this).parents(".task-element").find("checkbox").val();
+
+    $.ajax({
+       type: "PUT",
+       url: "/tasks/" + $(this).parents(".task-element").data("id") + ".json",
+       data: {task:{name:name,
+          project_id: project_id,
+          status: "open"
+        }},
+       success: function(msg){
+          self.find("a").hide();
+          self.parent().find(".edit").show();
+          self.parents(".task-element").find(".name").html(name);
+       },
+       error: function (res) {
+        alert(res.responseJSON.name[0]);
+       }
+     });
     return false;
 
   });
