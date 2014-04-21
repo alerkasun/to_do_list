@@ -1,5 +1,7 @@
+<div class="header">
 <h1><center>SIMPLE TODO LISTS</center></h1>
 <h2><center>FROM RUBY GARAGE</center></h2>
+</div>
 
 <% @projects.each do |project| %>
   <div class="project_and_tasks" data-id="<%= project.id %>">
@@ -12,8 +14,8 @@
     <div class="task">
       <%= form_for(@task || Task.new) do |f| %>
         <div class="icon"><%= image_tag("plus.png")%></div>
-        <div class="name"><%= f.text_field :name, :placeholder => "Start typing here to create a task...", :size => 75%><%= f.hidden_field :project_id, :value => project.id %></div>
-        <div class="button"><%= f.submit '    Add Task    ', :class => 'button_add_task' %></div>
+        <div class="name"><%= f.text_field :name, :placeholder => "Start typing here to create a task...", :size => 10%><%= f.hidden_field :project_id, :value => project.id %></div>
+        <div class="button"><%= f.submit 'Add Task', :class => 'button_add_task' %></div>
       <% end %>
     </div>
 
@@ -36,9 +38,7 @@
         </div>
         <br>
       <% end %>
-
-    <br>
-  </div>
+</div>
 <% end %>
 <br><br><br><br><br>
 <%= link_to '  Add ToDo List  ', new_project_path, {class: "new_project_button"} %>

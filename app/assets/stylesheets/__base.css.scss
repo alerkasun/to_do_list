@@ -1,60 +1,235 @@
-
 body {
-  background-image: image-url('garage1.jpg');
-  background-position: left top;
-  background-repeat: repeat;
-   }
-
-.task-action-delete-task a {
-width:14px;
-height:16px;
-display: inline-block;
-background: image-url('delete_task.png') no-repeat;
+background-image: image-url('garage1.jpg');
+background-position: left top;
+background-repeat: repeat;
+margin: 0;
+padding: 0;
+font: 12px/18px Arial, sans-serif;
+min-height: 100%;
 }
 
-.task-action-edit-task a {
-width:14px;
-height:14px;
-display: inline-block;
-background: image-url('edit_task.png') no-repeat;
+.project_and_tasks{
+  width: 700px;
+  margin: auto;
 }
 
-.task-action-save-task a {
-width:14px;
-height:14px;
-display: inline-block;
-background: image-url('save_task.png') no-repeat;
+.project {
+  margin: 20px 0 0 0;
+  height: 35px;
+  padding: 5px 0 5px 50px;
+  background: image-url('note.png') no-repeat 15px 50% #4169A7;
 }
 
-
-
-table {
-width: 100%;
-}
-.col1 {
-width: 100px;
-}
-td.col1 { background: #4169A7; color: white; }
-td.col2 { background: #D0D0D0; color: white; }
-td.col3 { background: #FFFFFF; color: white; }
-
-.task-action-delete-task a {
-width:14px;
-height:16px;
-display: inline-block;
-background: image-url('delete_task.png') no-repeat;
+.project .name{
+  color:white;
+  font-family:"Times New Roman";
+  font-size: 22px;
+  vertical-align:middle;
+  float: left;
+  line-height: 35px;
 }
 
-.task-action-edit-task a {
-width:14px;
-height:14px;
-display: inline-block;
-background: image-url('edit_task.png') no-repeat;
+.project .action {
+  float: right;
+  height: 15px;
+  padding-top: 10px;
+
+  a {
+    display: block;
+    width: 30px;
+    height: 35px;
+    margin: 0 5px;
+  }
 }
 
-.task-action-save-task a {
-width:14px;
-height:14px;
-display: none;
-background: image-url('save_task.png') no-repeat;
+.project .action.edit a {
+  background: image-url('edit_project.png') no-repeat;
+}
+
+.project .action.delete a {
+  background: image-url('delete_project.png') no-repeat;
+}
+
+.task {
+  height: 35px;
+  padding: 5px;
+  background: #DADADA;
+  overflow: hidden;
+}
+
+.task .icon {
+  width: 20px;
+  height: 35px;
+  float: left;
+  padding: 5px 0 0 5px;
+}
+
+.task .name {
+  height: 35px;
+  float: left;
+  padding: 6px 20px;
+}
+
+.task .name input {
+  width: 460px;
+  padding: 0 10px;
+}
+
+.task .button {
+  width: 140px;
+  float: right;
+  height: 30px;
+  padding: 0 px 0 0 0;
+}
+
+.tasks {
+  background: #FCFED5;
+  list-style: none;
+  list-type: none;
+  padding: 0;
+  margin: 0;
+
+  .task-element {
+    height: 35px;
+    overflow: hidden;
+  }
+
+  .grey {
+    background: #e1e1e1;
+  }
+
+  .checkbox {
+    float: left;
+    padding: 8px 10px;
+    border-right: 1px solid #efdadf;
+  }
+
+  .name {
+  border-left: 1px solid #efdadf;
+  border-right: 1px solid #e7ebea;
+  color: #8A8181;
+  padding: 8px;
+  width: 510px;
+  float: left;
+}
+
+  .actions {
+    float: right;
+    padding: 0;
+    margin: 0;
+
+    div {
+      float: left;
+      padding: 10px 5px;
+      margin: 5px 5px 0 0;
+    }
+  }
+}
+
+.tasks .name:hover {
+  color: #000000;
+}
+
+.tasks .checkbox {
+  width: 35px;
+  vertical-align:middle;
+  padding: 5px;
+  display: inline-block;
+}
+
+.tasks .action.order {width: 35px;
+  vertical-align:middle;
+  padding: 5px;
+  display: inline-block;
+}
+
+.tasks .action.edit {
+  display: inline;
+  a {
+  background: image-url('edit_task.png') no-repeat;
+  width: 14px;
+  height: 14px;
+  vertical-align:middle;
+  display: inline-block;
+  float:right;
+  }
+}
+
+.tasks .action.show {
+  display: inline;
+  a {
+  background: image-url('show_task.png') no-repeat;
+  width: 16px;
+  height: 16px;
+  vertical-align:middle;
+  display: inline-block;
+  float:right;
+  }
+}
+
+.tasks .action.delete {
+  display: inline;
+  a {
+  vertical-align:middle;
+  display: inline-block;
+  width:14px;
+  height:16px;
+  background: image-url('delete_task.png') no-repeat;
+  float:right;
+  }
+}
+
+.tasks .action.save {
+  display: inline;
+  a {
+  vertical-align:middle;
+  display: none;
+  width:14px;
+  height:16px;
+  background: image-url('save_task.png') no-repeat;
+  float:right;
+  }
+}
+
+.button_add_task {
+  margin-bottom: 10;
+  display: inline-block;
+  vertical-align:middle;
+  cursor: pointer;
+  text-align: center;
+  background: #7BB293;
+  color: white;
+  font-size: 12pt;
+}
+
+.button_add_list {
+  display: inline-block;
+  vertical-align:middle;
+  cursor: pointer;
+  text-align: center;
+  background: #7BB293;
+  color: white;
+  font-size: 12pt;
+}
+
+.new_project_button {
+  background-color:#5186C0;
+  color:white;
+  margin-left: 520px;
+  border: 1px solid #000000;
+  font-size: 20pt;
+  padding: 11px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.all_task_button {
+  background-color:#5186C0;
+  color:white;
+  margin-left: 555px;
+  border: 1px solid #000000;
+  font-size: 20pt;
+  padding: 11px;
+  cursor: pointer;
+  text-decoration: none;
 }
